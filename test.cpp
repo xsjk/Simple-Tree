@@ -1,11 +1,4 @@
-
-#include <memory>
-#include <vector>
-#include <initializer_list>
-
-template<typename T>
-using List=const std::initializer_list<T>&;
-#include<iostream>
+#include <iostream>
 #include "Tree.hpp"
 
 int main(){
@@ -18,6 +11,4 @@ int main(){
 
     t2.self() = 5;
     std::cout<<t1.child(0).self()<<std::endl;
-
-
 }
